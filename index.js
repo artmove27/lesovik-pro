@@ -1,3 +1,9 @@
+/*
+*    index.js@1.1.1
+*
+*
+*/
+
 var self = require('sdk/self');
 
 // a dummy function, to show how tests work.
@@ -5,6 +11,11 @@ var self = require('sdk/self');
 var {Cc, Ci} = require("chrome");
 var buttons = require('sdk/ui/button/action');
 var tabs = require("sdk/tabs");
+var windows = require("sdk/windows").browserWindows;
+
+//мсесто для вставок
+
+//
 
 var button = buttons.ActionButton({
   id: "lesovik-link",
@@ -14,7 +25,7 @@ var button = buttons.ActionButton({
     "32": "./icon-32.png",
     "64": "./icon-64.png"
   },
-  onClick: handleClick
+  onClick: ClickOpenWin
 });
 
 function handleClick(state) {
@@ -23,6 +34,15 @@ function handleClick(state) {
      inNewWindow: true
 });
 }
+
+function ClickOpenWin() {
+
+  //windows.open("http://www.example.com");
+  windows.open("./gui.html");
+  console.log("222");
+}
+
+
 function dummy(text, callback) {
   callback(text);
 }
