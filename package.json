@@ -1,0 +1,16 @@
+{
+  "title": "lesovik",
+  "name": "lesovik",
+  "version": "0.1.0",
+  "description": "workinng is vk.com",
+  "main": "index.js",
+  "author": "A.M. Tomilov",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

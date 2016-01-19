@@ -1,0 +1,21 @@
+
+
+#art-main
+{
+   background: #939262 url('images/page.jpeg') top center no-repeat fixed;
+   margin:0 auto;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+   background-size: cover;
+  position: relative;
+}
+body, html{
+    height:100%;
+    padding:0;
+    margin:0;
+} 
+

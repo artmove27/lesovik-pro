@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>LesoViK</title>
+		<meta name="description" content="Nifty Modal Window Effects with CSS Transitions and Animations" />
+		<meta name="keywords" content="modal, window, overlay, modern, box, css transition, css animation, effect, 3d, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" href="style.css" media="screen">
+
+		<script type="text/javascript">
+function startTime()
+{
+var tm=new Date();
+var h=tm.getHours();
+var m=tm.getMinutes();
+var s=tm.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+        
+
+	</head>
+	<body onload="startTime()">
+<div id="art-main">
+		<!-- All modals added here for the demo. You would of course just have one, dynamically created -->
+		<div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content" id="clmodal3">
+				<h3>Key Id</h3>
+				<div>
+					<p>Укажите ваш ключ</p>
+		
+                                    <form onsubmit="alert('submit! modal');return false">
+  Первый: Enter в текстовом поле <input type="text" value="Текст"><br>
+<button class="md-close" data-action="modal" data-modalOpen="modal-10">Авторизоваться</button><br>
+</form>
+
+ <button class="md-close"  data-modalClose="modal-1" data-action="mClose" data-modalOpen="modal-10">Закрыть</button>
+
+
+
+				</div>
+			</div>
+		</div>
+		    <!-- мои окна -->
+
+ <!-- /мои окна -->
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+			<span><a class="" href="#/"> ///// Статус: </a></span>
+                        <span class="right"><a class="" href="#"><span id="txt">Дата и время</span></a>
+			</div>
+			<header>
+				<h1>LesoViK<span>Разговор на языке Энтов требует много времени</span></h1>
+			</header>
+			<div class="main clearfix">
+				<div class="column">
+					<p>There are many possibilities for modal overlays to appear. Here are some modern ways of showing them using CSS transitions and animations.</p>
+				</div>
+				<div class="column" id="menu">
+                                        <a href="http://vk.com/" target="_blank"> <button>Открыть VK</button></a>
+					<button class="md-trigger" data-modalOpen="modal-1" data-action="modal">Код активации</button>
+                                       <button id="mdclose" bots="lesovic.js" class="mdclose" data-action="testbot">Post VK</button>
+                                       <button id="mdclose" bots="user1.iim" class="mdclose" data-action="testbot">User</button>
+                                       <button class="md-trigger md-setperspective" data-modalOpen="modal-20" data-action="modal">VK-Tools</button>
+                                           <button class="md-trigger" data-modalOpen="modal-12" data-action="modal">About</button>
+                                       
+                                     
+                          <!--
+                                        	<button class="md-trigger" id="mdclose" data-modal="modal-6">Side Fall</button>
+                               
+					<button class="md-trigger" data-modal="modal-2">Slide in (right)</button>
+					<button class="md-trigger" data-modal="modal-3" >Slide in (bottom)</button>
+					<button class="md-trigger" data-modal="modal-4">Newspaper</button>
+					<button class="md-trigger" data-modal="modal-5">Fall</button>
+					<button class="md-trigger" data-modal="modal-6">Side Fall</button>
+					<button class="md-trigger" data-modal="modal-7">Sticky Up</button>
+					<button class="md-trigger" data-modal="modal-8">3D Flip (horizontal)</button>
+					<button class="md-trigger" data-modal="modal-9">3D Flip (vertical)</button>
+					<button class="md-trigger" data-modal="modal-10">3D Sign</button>
+					<button class="md-trigger" data-modal="modal-11">Super Scaled</button>
+					
+					<button class="md-trigger" data-modal="modal-13">3D Slit</button>
+					<button class="md-trigger" data-modal="modal-14">3D Rotate Bottom</button>
+					<button class="md-trigger" data-modal="modal-15">3D Rotate In Left</button>
+					<button class="md-trigger" data-modal="modal-16">Blur</button>
+                                       -->
+                                        <!-- special modal that will add a perspective class to the html element -->
+                                            <!--
+					<button class="md-trigger md-setperspective" data-modal="modal-17">Let me in</button>
+					<button class="md-trigger md-setperspective" data-modal="modal-18">Make way!</button>
+					<button class="md-trigger md-setperspective" data-modal="modal-19">Slip from top</button>
+                                       
+                                
+                                             <button id="mdclose" data-modal="modal-19" bots="Test2" >Моя кнопка 3</button>
+                                          <button id="mdclose" data-modal="modal-119" bots="Test" >Моя кнопка 4</button>
+                                      -->
+                                       
+                                        
+
+				</div>
+			</div>
+		</div><!-- /container -->
+		<div class="md-overlay" ib="mdoverlay"></div><!-- the overlay element -->
+       <script src="js/interface_no.js"></script>
+
+  
+</div>
+
+	</body>
+</html>
