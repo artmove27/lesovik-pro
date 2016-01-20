@@ -3,7 +3,7 @@
 *
 *
 */
-var versions = "index.js@1.1.4";
+var versions = "index.js@1.1.3";
 console.log(versions);
 // "permissions": {"private-browsing": true},
 var self = require('sdk/self');
@@ -16,9 +16,8 @@ var pageMod = require("sdk/page-mod");
 
 //контроллер
  function startListening(worker) {
-    worker.port.on('tbo', function(urs) {
-           console.log("Контроллер");
-      tabs.open(urs);
+    worker.port.on('click', function (html) {
+      worker.port.emit('warning', 'Do not click this again');
     });
   }
 
@@ -50,7 +49,7 @@ function ClickOpenWin() {
 
   //windows.open("http://www.example.com");
   windows.open("./gui.html");
-  console.log("gui.html@2.1.0");
+  console.log("gui.html");
 }
 
 

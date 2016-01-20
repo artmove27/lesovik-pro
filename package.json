@@ -5,7 +5,7 @@
   "description": "workinng is vk.com",
   "main": "index.js",
   "author": "A.M. Tomilov",
-  "engines": {
+   "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
   },
@@ -13,4 +13,5 @@
   "keywords": [
     "jetpack"
   ]
+
 }

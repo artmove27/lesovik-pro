@@ -7,7 +7,7 @@
  *
  */
 
-var versions = "gui.js@1.1.4";
+var versions = "gui.js@2.1.2";
 console.log(versions);
 
 // конструктор кнопок
@@ -18,7 +18,7 @@ function Btn(BtnId, BtnName) {
     this.buttonCrt = function() {
        var addbuttont =  document.createElement('button');
         addbuttont.className = "md-trigger";
-        addbuttont.id = BtnId;
+        addbuttont.id = BtnId
         addbuttont.innerHTML = this.BtnName;
             return addbuttont;
     }
@@ -57,10 +57,7 @@ var tvk = new Btn("tvk", "Перейти в VK");
 tvk.Activate = function() {
     $("#" + tvk.BtnId).live('click', function() {
        alert('Вы нажали на элемент кнопку');
-           // ctrpage();
-            self.port.emit('tbo', "http://www.example.com");
-            event.stopPropagation();
-            event.preventDefault();
+            ctrpage();
     }
     )}
 tvk.Activate();
@@ -71,8 +68,19 @@ mn.menuView( bb.buttonCrt(), "menu" );
 mn.menuView( bc.buttonCrt(),"menu" );
 
 // вставки
+//
+function ctrpage(){
+    window.addEventListener('click', function(event) {
+        self.port.emit('click', event.target.toString());
+        event.stopPropagation();
+        event.preventDefault();
+    }, false);
 
+    self.port.on('warning', function(message) {
+        window.alert(message);
+    });
 
+}
 //
 
 
