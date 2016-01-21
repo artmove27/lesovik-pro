@@ -3,6 +3,7 @@
 *
 *
 */
+
 var versions = "index.js@1.1.4";
 console.log(versions);
 // "permissions": {"private-browsing": true},
@@ -59,7 +60,9 @@ pageMod.PageMod({
  // contentScriptFile: ("./content-gui.js")
   contentScriptWhen: 'ready',
   contentScriptFile: [data.url("jquery-1.8.3.js"),
-                            data.url("gui.js")],
+                            data.url("gui.js"),
+
+  ],
     onAttach: startListening
 });
 

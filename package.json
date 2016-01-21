@@ -1,13 +1,14 @@
 {
-  "title": "lesovik",
-  "name": "lesovik",
-  "version": "1.1.1",
+  "title": "alfa-lesovik",
+  "name": "alfa-lesovik",
+  "version": "1.1.4",
   "description": "workinng is vk.com",
   "main": "index.js",
   "author": "A.M. Tomilov",
    "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
+
   },
   "license": "MIT",
   "keywords": [
