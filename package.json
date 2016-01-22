@@ -1,18 +1,16 @@
 {
   "title": "alfa-lesovik",
   "name": "alfa-lesovik",
-  "version": "1.1.4",
+  "version": "2.0.4",
   "description": "workinng is vk.com",
   "main": "index.js",
   "author": "A.M. Tomilov",
    "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
-
   },
   "license": "MIT",
   "keywords": [
     "jetpack"
   ]
-
 }

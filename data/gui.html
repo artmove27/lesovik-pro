@@ -9,11 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
            <link rel="stylesheet" href="style.css" media="screen">
-		<link type="text/css" href="./jquery-ui.css" rel="Stylesheet" />
-		<link type="text/css" href="./jquery-ui.css" rel="Stylesheet" />
-		<script type="text/javascript" src="./jquery-ui.min.js"></script>
-
-		<script type="text/javascript">
+			<script type="text/javascript">
 function startTime()
 {
 var tm=new Date();
@@ -34,14 +30,32 @@ i="0" + i;
 return i;
 }
 </script>
-        
 
 	</head>
 	<body onload="startTime()">
 <div id="art-main">
 		<!-- All modals added here for the demo. You would of course just have one, dynamically created -->
-		 <!-- мои окна -->
+	<!-- /мои окна -->
+		 <!--
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content" id="clmodal3">
+			<h3>Key Id</h3>
+			<div>
+				<p>Укажите ваш ключ</p>
 
+				<form onsubmit="alert('submit! modal');return false">
+					Первый: Enter в текстовом поле <input type="text" value="Текст"><br>
+					<button class="md-close" data-action="modal" data-modalOpen="modal-10">Авторизоваться</button><br>
+				</form>
+
+				<button class="md-close"  data-modalClose="modal-1" data-action="mClose" data-modalOpen="modal-10">Закрыть</button>
+
+
+
+			</div>
+		</div>
+	</div>
+	-->
  <!-- /мои окна -->
 		<div class="container" id="mop">
 			<!-- Top Navigation -->
@@ -57,16 +71,13 @@ return i;
 					<p>There are many possibilities for modal overlays to appear. Here are some modern ways of showing them using CSS transitions and animations.</p>
 				</div>
 				<div class="column" id="menu">
+
 				</div>
 			</div>
 		</div><!-- /container -->
 		<div class="md-overlay" ib="mdoverlay"></div><!-- the overlay element -->
 
-
-
-  
 </div>
-
 
 	</body>
 </html>

@@ -1,15 +1,26 @@
 {
-  "name": "LesoViK",
-  "description": "working VK",
-  "launch_path": "/index.js",
-   "icons": {
-    "16": "./data/icon-16.png",
-    "32": "./data/icon-32.png",
-    "64": "./data/icon-64.png",
-    "128": "./data/icon-128.png"
+
+  "description": "Adds browser action icon to toolbar to open packaged web page. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#open-my-page-button",
+  "manifest_version": 2,
+  "name": "open-my-page",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "open-my-page-button@mozilla.org"
+    }
   },
-  "developer": {
-    "name": "A.M. Tomilov",
-    "url": "*"
+
+  "permissions": [
+    "tabs" 
+  ],
+  
+  "background": {
+    "scripts": ["index.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon/icon-32.png"
   }
+
 }

@@ -1,0 +1,15 @@
+{
+  "name": "LesoViK-Pro",
+  "description": "working VK",
+  "launch_path": "/index.js",
+   "icons": {
+    "16": "./data/icon-16.png",
+    "32": "./data/icon-32.png",
+    "64": "./data/icon-64.png",
+    "128": "./data/icon-128.png"
+  },
+  "developer": {
+    "name": "A.M. Tomilov",
+    "url": "*"
+  }
+}
